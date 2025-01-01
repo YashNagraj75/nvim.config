@@ -3,7 +3,7 @@ return {
   config = function()
     vim.keymap.set(
       "n",
-      "<C-n>",
+      "<C-`>",
       "<cmd>:FloatermNew<CR>",
       {}
     )
