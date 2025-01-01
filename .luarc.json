@@ -1,0 +1,9 @@
+{
+    "diagnostics.globals": [
+        "vim",
+        "presets"
+    ],
+    "diagnostics.disable": [
+        "redundant-value"
+    ]
+}
