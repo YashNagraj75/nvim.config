@@ -6,5 +6,6 @@ return {
   },
   config = function ()
     require("whichpy").setup()
+    vim.keymap.set("n","lk",":WhichPy select<CR>",{})
   end
 }
