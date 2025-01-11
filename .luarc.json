@@ -2,7 +2,10 @@
     "diagnostics.globals": [
         "vim",
         "presets",
-        "keys"
+        "keys",
+        "open_files_do_not_replace_types",
+        "window",
+        "filesystem"
     ],
     "diagnostics.disable": [
         "redundant-value"
