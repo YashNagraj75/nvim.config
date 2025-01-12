@@ -24,7 +24,7 @@ return {
 
 		notifier = {
 			border = "rounded",
-			zindex = 100,
+			zindex = 500,
 			ft = "markdown",
 			wo = {
 				winblend = 5,
