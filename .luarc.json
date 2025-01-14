@@ -7,6 +7,7 @@
         "filesystem"
     ],
     "diagnostics.disable": [
-        "redundant-value"
+        "redundant-value",
+        "undefined-doc-name"
     ]
 }
