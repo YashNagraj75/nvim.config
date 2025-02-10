@@ -5,7 +5,6 @@ return {
 		"nvim-lua/plenary.nvim",
 		"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
 		"MunifTanjim/nui.nvim",
-		"3rd/image.nvim",
 	},
 	config = function()
 		vim.keymap.set("n", "<C-b>", ":Neotree toggle<CR>", {})
