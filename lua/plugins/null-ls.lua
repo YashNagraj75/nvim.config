@@ -18,7 +18,7 @@ return {
 				formatting.prettier,
 				formatting.biome,
 				formatting.goimports, -- Ensures goimports runs on save
-				formatting.gofmt,
+				formatting.gofumpt,
 			},
 			on_attach = function(client, bufnr)
 				if client.supports_method("textDocument/formatting") then
@@ -31,17 +31,6 @@ return {
 						end,
 					})
 				end
-			end,
-		})
-
-		-- Run goimports via CLI on save for additional reliability
-		vim.api.nvim_create_autocmd("BufWritePre", {
-			pattern = "*.go",
-			group = go_imports_group,
-			callback = function()
-				local file = vim.fn.expand("%:p")
-				vim.fn.system("goimports -w " .. file)
-				vim.cmd("edit")
 			end,
 		})
 	end,
